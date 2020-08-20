@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<com.yazdaniha.handbookprototype.CanvasView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <ImageView
+        android:id="@+id/Screen1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/screen1t"
+        android:scaleType="fitXY"
+        android:src="@drawable/screen1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Pen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/pent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Menu"
+            app:layout_constraintVertical_bias="0.015"
+            app:srcCompat="@drawable/penimg" />
+
+        <ImageView
+            android:id="@+id/Eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/erasert"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toEndOf="@+id/Pen"
+            app:layout_constraintTop_toBottomOf="@+id/Menu"
+            app:layout_constraintVertical_bias="0.013"
+            app:srcCompat="@drawable/eraserimg" />
+
+        <ImageView
+            android:id="@+id/Colorchoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/colort"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.024"
+            app:layout_constraintStart_toEndOf="@+id/Eraser"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084"
+            app:srcCompat="@drawable/circleimg" />
+
+        <ImageView
+            android:id="@+id/Menu"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/menut"
+            app:layout_constraintBottom_toTopOf="@+id/Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005"
+            app:srcCompat="@drawable/menu1img" />
+
+        <ImageView
+            android:id="@+id/Start"
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:contentDescription="@string/forwardt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.872"
+            app:srcCompat="@drawable/forwardimg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

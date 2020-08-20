@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Handbook Prototype</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="screen1t">Page 1 of handbook</string>
+    <string name="screen2t">Page 2 of handbook</string>
+    <string name="forwardt">Button for progression</string>
+    <string name="menut">Icon for menu</string>
+    <string name="pent">Icon for pen</string>
+    <string name="erasert">Icon for eraser</string>
+    <string name="colort">Icon for change color</string>
+</resources>
